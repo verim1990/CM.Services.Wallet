@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <DockerComposeProjectPath>..\..\..\docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>15a36bf3-2f7a-478e-a780-16a1bc38b0dc</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CM.Services.Wallet.Concrete\CM.Services.Wallet.Concrete.csproj" />
+    <ProjectReference Include="..\CM.Services.Wallet.Infrastracture\CM.Services.Wallet.Infrastracture.csproj" />
+    <ProjectReference Include="..\..\..\CM.Shared\CM.Shared.Web\CM.Shared.Web.csproj" />
+  </ItemGroup>
+
+</Project>
